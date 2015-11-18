@@ -468,7 +468,7 @@ static PyMethodDef PyrapidjsonMethods[] = {
 #ifdef PY3
 static struct PyModuleDef pyrapidjson_module_def = {
     PyModuleDef_HEAD_INIT,
-    "rapidjson",
+    "pyrapidjson",
     pyrapidjson__doc__,
     -1,
     PyrapidjsonMethods,
@@ -489,7 +489,7 @@ initrapidjson(void)
     return module;
 #else
     /* The module */
-    module = Py_InitModule3("rapidjson", PyrapidjsonMethods, pyrapidjson__doc__);
+    module = Py_InitModule3("pyrapidjson", PyrapidjsonMethods, pyrapidjson__doc__);
     if (module == NULL)
         return;
 #endif

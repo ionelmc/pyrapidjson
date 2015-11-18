@@ -22,7 +22,7 @@ setup(
     ],
     keywords='json rapidjson',
     ext_modules=[
-        Extension('rapidjson',
+        Extension('pyrapidjson',
                   sources=['pyrapidjson/_pyrapidjson.cpp'],
                   include_dirs=['./pyrapidjson/include/'],
                   #extra_compile_args=["-DDEBUG"],
